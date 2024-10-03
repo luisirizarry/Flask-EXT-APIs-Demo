@@ -1,6 +1,6 @@
 import requests
-
-key = '4WiuDGgyNC6lAp04txicEbLMUf53z5O0'
+# Need to import key from secrets_1
+from secrets_1 import key
 
 response = requests.get('http://www.mapquestapi.com/geocoding/v1/address',
-                        params={'key': key, 'location': '123 Main St.'})
+                        params={'key': key, 'location': 'Boston, MA'})
